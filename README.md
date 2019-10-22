@@ -1,4 +1,5 @@
-# manage-iq
+# About
+Collection of scripts and resources for deploying Redhat ManageIQ. Will also work for CloudForms.
 
-# links
-https://access.redhat.com/solutions/1414393
+# Links
+* Change default passwords - https://access.redhat.com/solutions/1414393
