@@ -1,0 +1,10 @@
+# https://access.redhat.com/articles/1134633 
+
+* Type `fdisk -l` to display the newly added disk.
+* pvcreate /dev/vdc
+* vgextend vg_data /dev/vdc
+* vgdisplay vg_data # after extenstion
+* lvdisplay /dev/vg_data/lv_pg # current size
+* lvextend -l +100%FREE /dev/vg_data/lv_pg
+* xfs_growfs /dev/mapper/vg_data-lv_pg
+* df -kh | grep vg_data-lv_pg
