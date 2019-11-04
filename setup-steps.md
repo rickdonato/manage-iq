@@ -1,9 +1,9 @@
-Below details the steps required to build a 3 zone (ui, db and worker zone) setup.
+Below details the steps required to build a 3 zone (ui, db and worker zone) setup, with a master db region.
 This will build the deployment within region = 1.
 
 
 # Create VMs
-Create VMs
+Create 5 x VMs
 VMDB - 2 x 
 1 x VM
 
