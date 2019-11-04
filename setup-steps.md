@@ -11,7 +11,7 @@ This will build the deployment within region = 1.
 
 
 ## Configure VMDB Redunant air
-## VMDB 1
+### VMDB 1
 * Run script `clean-miq.sh`.
 * Run the command below:
 ```
@@ -38,7 +38,7 @@ appliance_console_cli --username root \
                       --cluster-node-number 1 \ 
                       --auto-failover
 ```
-## VMDB 2
+### VMDB 2
 * Run script `clean-miq.sh`.
 * Run the command below:
 ```
@@ -56,7 +56,7 @@ appliance_console_cli --replication standby \
 ```
 * Check status of device from within `appliance_console`.
 
-# Configure UI
+## Configure UI
 * Run the command below:
 ```
 appliance_console_cli --hostname {DB_IP1} \
@@ -68,7 +68,7 @@ appliance_console_cli --hostname {DB_IP1} \
                       --timezone=Europe/London
 ```
 
-# Configure Worker
+## Configure Worker
 * Run the command below:
 ```
 appliance_console_cli --hostname {DB_IP1} \ 
@@ -78,3 +78,7 @@ appliance_console_cli --hostname {DB_IP1} \
                       --sshpassword {SSH_PASSWORD} \
                       --timezone=Europe/London
 ```
+## UI Configuration
+Via the portal configure the required zones and services for each device:
+* Zones : Configuration / Settings / Zones - Create Zone and assign servers to zones.
+* Services : Under each server configure the required services.
