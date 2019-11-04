@@ -3,7 +3,7 @@ This will build the deployment within region = 1.
 
 
 # Create Virtual Machines
-* Create 5 x VMs:
+Create 5 x VMs:
  * 2 x VMDB
  * 1 x UI
  * 1 x Worker
