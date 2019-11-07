@@ -33,9 +33,9 @@ appliance_console_cli --region 1 \
 appliance_console_cli --username root \
                       --password {DB_PASSWORD} \
                       --dbname vmdb_production \
-                      --replication primary \ 
-                      --primary-host {DB_IP1} \ 
-                      --cluster-node-number 1 \ 
+                      --replication primary \
+                      --primary-host {DB_IP1} \
+                      --cluster-node-number 1 \
                       --auto-failover
 ```
 ### VMDB 2
