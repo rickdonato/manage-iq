@@ -64,8 +64,7 @@ appliance_console_cli --hostname {DB_IP1} \
                       --password {DB_PASSWORD} \
                       --timezone=Europe/London \
                       --fetch-key {DB_IP1}  \
-                      --sshpassword {SSH_PASSWORD} \
-                      --timezone=Europe/London
+                      --sshpassword {SSH_PASSWORD}
 ```
 
 ## Configure Worker
