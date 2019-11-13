@@ -59,6 +59,7 @@ appliance_console_cli --replication standby \
 ## Configure UI
 * Run the command below:
 ```
+vmdb ; rm config/database.yml
 appliance_console_cli --hostname {DB_IP1} \
                       --username root \
                       --password {DB_PASSWORD} \
@@ -70,6 +71,7 @@ appliance_console_cli --hostname {DB_IP1} \
 ## Configure Worker
 * Run the command below:
 ```
+vmdb ; rm config/database.yml
 appliance_console_cli --hostname {DB_IP1} \ 
                       --username root \
                       --password {DB_PASSWORD} \
