@@ -1,0 +1,1 @@
+cd /var/www/miq/vmdb/ && source /etc/default/evm && rails runner -e production "user = User.find_by_userid('admin'); user.password = 'smartvm'; user.save;"
