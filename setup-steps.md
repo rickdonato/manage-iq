@@ -38,6 +38,7 @@ appliance_console_cli --username root \
                       --cluster-node-number 1 \
                       --auto-failover
 ```
+* via appliance_console reset DB.
 ### VMDB 2
 * Run script `clean-miq.sh`.
 * Run the command below:
@@ -55,7 +56,7 @@ appliance_console_cli --replication standby \
                       timezone=Europe/London
 ```
 * Check status of device from within `appliance_console`.
-
+* via appliance_console reset DB.
 ## Configure UI
 * Run the command below:
 ```
