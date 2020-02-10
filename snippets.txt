@@ -1,6 +1,12 @@
 # reset password
-cd /var/www/miq/vmdb/ && source /etc/default/evm && rails runner -e production "user = User.find_by_userid('admin'); user.password = 'smartvm'; user.save;"
+cd /var/www/miq/vmdb/
+source /etc/default/evm
+rails runner -e production "user = User.find_by_userid('admin'); user.password = 'smartvm'; user.save;"
 
-# service admin
+# service checks
 apachectl status
 service evmserverd status
+
+# service restarts
+apachectl restart
+service evmserverd restart
